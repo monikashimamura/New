@@ -35,11 +35,7 @@ WidgetLog::WidgetLog(QWidget *parent)
     //启动监听
     ser = new QTcpServer(this);
     unsigned short int port = 9090;//端口号预设为9090+用户编号，上限为65536
-    ser->listen(QHostAddress::Any, port);\
-
-    connect();
-
-
+    ser->listen(QHostAddress::Any, port);
 
 
 

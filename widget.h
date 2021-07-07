@@ -33,9 +33,6 @@ public:
     ~Widget();
     Publish * publish =NULL;//widget.h 31
 
-
-private:
-    Ui::Widget *ui;
     GonggaoPublish *gonggaopub = NULL;
     QVector<Gonggao*>gonggaovec;
     RizhiPublish *rizhipub = NULL;
@@ -46,6 +43,10 @@ private:
     Single_2 *single_2 = NULL;
     Single_3 *single_3 = NULL;
     WidgetRegister *reg = NULL;//新修改2
+
+private:
+    Ui::Widget *ui;
+
 
 
 
