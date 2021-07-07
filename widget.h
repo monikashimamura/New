@@ -47,8 +47,7 @@ private:
     Single_3 *single_3 = NULL;
     WidgetRegister *reg = NULL;//新修改2
 
-    QTcpServer *ser;
-    QTcpSocket *tcp;
+
 
 
 

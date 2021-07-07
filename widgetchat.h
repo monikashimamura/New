@@ -20,6 +20,11 @@ public:
 
 private:
     Ui::WidgetChat *ui;
+
+
+signals:
+    void initialize();
+
 };
 
 #endif // WIDGETCHAT_H

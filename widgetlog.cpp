@@ -31,6 +31,18 @@ WidgetLog::WidgetLog(QWidget *parent)
         Btn2->zoom2();
         QTimer::singleShot(500,this,[=](){});
     });
+
+    //启动监听
+    ser = new QTcpServer(this);
+    unsigned short int port = 9090;//端口号预设为9090+用户编号，上限为65536
+    ser->listen(QHostAddress::Any, port);\
+
+    connect();
+
+
+
+
+
     //进入到选择注册中
     connect(Btn1,&QPushButton::clicked,this,[=](){
         this->hide();
