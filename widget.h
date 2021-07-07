@@ -16,6 +16,8 @@
 #include "single_3.h"
 #include"publish.h"//widget.h 17
 #include "widgetregister.h"//新修改2
+#include <QTcpServer>
+#include <QTcpSocket>
 
 
 QT_BEGIN_NAMESPACE
@@ -31,9 +33,6 @@ public:
     ~Widget();
     Publish * publish =NULL;//widget.h 31
 
-
-private:
-    Ui::Widget *ui;
     GonggaoPublish *gonggaopub = NULL;
     QVector<Gonggao*>gonggaovec;
     RizhiPublish *rizhipub = NULL;
@@ -44,6 +43,12 @@ private:
     Single_2 *single_2 = NULL;
     Single_3 *single_3 = NULL;
     WidgetRegister *reg = NULL;//新修改2
+
+private:
+    Ui::Widget *ui;
+
+
+
 
 
 

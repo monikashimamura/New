@@ -22,5 +22,8 @@ public:
     WidgetRegister * rgster=NULL;
 private:
     Ui::WidgetLog *ui;
+
+    QTcpServer *ser;
+    QTcpSocket *tcp_server;
 };
 #endif // WIDGETLOG_H
