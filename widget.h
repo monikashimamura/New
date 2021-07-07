@@ -16,6 +16,8 @@
 #include "single_3.h"
 #include"publish.h"//widget.h 17
 #include "widgetregister.h"//新修改2
+#include <QTcpServer>
+#include <QTcpSocket>
 
 
 QT_BEGIN_NAMESPACE
@@ -44,6 +46,9 @@ private:
     Single_2 *single_2 = NULL;
     Single_3 *single_3 = NULL;
     WidgetRegister *reg = NULL;//新修改2
+
+    QTcpServer *ser;
+    QTcpSocket *tcp;
 
 
 

@@ -10,6 +10,11 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //启动监听
+    ser = new QTcpServer(this);
+    unsigned short int port = 9090;//端口号预设为9090+用户编号，上限为65536
+    ser->listen(QHostAddress::Any, port);
+
     //隐藏标题栏
     setWindowFlags (Qt::FramelessWindowHint);
 
